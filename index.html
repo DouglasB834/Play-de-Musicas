@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style-lg-cdt.css">
+    </head>
+    <body>
+        
+        <main class="container">
+            <div class="card">
+                <h1>Entrar</h1>
+
+                <div id="erro"></div><!-- msg erro -->
+
+                <div class="label-float">
+                    <input type="text" id="usuario" placeholder="" required>
+                    <label id="labelUsuario" for="usuario">Usuário</label> 
+                </div>
+                
+                <div class="label-float">
+                    <input type="password" id="senha" placeholder="" required>
+                    <label id="labelSenha" for="senha">Senha</label> 
+                    
+                </div>
+                <input id="check" type="checkbox"><span>Lembrar senha</span>
+
+                <div class="justify-center">
+                    <button id="entrar" onclick="entrar ()" >Entrar</button>
+                </div>
+
+
+                <p><a href="#">Esqueceu a senha ?</a></p>
+                <p>Ainda não possui conta ?<a href="cadastrar.html"> Cadastre-se ja </a>
+                </p>
+
+                
+            </div>
+        </main>
+        <!-- Config Link JavaScript -->
+        <script  src="validação.js"></script>
+    </body>
+</html>

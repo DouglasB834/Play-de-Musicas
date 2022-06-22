@@ -1,0 +1,164 @@
+ @import "https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css";
+
+ @import "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"; 
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    transition: all .3s ease-out;
+
+}
+::selection {
+    background: #30697a8c;
+}
+
+body {
+    background-color: #aaa9a9;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+   
+}
+
+.card {
+    background-color: #efefef;
+    padding: 2rem;
+    border-radius: 4%;
+    box-shadow: 1px 3px 1px 2px #0000003a;
+    width: 400px;
+    height: 650px;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #272262;
+}
+
+.label-float input{
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+.label-float {
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float input:focus {
+    border-bottom: .1rem solid #30279698;
+}
+
+.label-float label {
+    color: #272262;
+    pointer-events: none;
+    /*previne ação sobre os elementos Usuário e senha  */
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-in-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: #4038a0;
+    /* mto legal validar com required e isso  */
+}
+
+button {
+    background-color: transparent;
+    border-color: #272262;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    /* outline: none; */
+
+}
+
+button:hover {
+    background-color: #272262;
+    color: #fff;
+    transition: all .5s ease-out;
+}
+
+.justify-center {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 2rem;
+   
+}
+
+.justify-center::after{
+    content: '';
+    width: 40% ;
+    height: 1px;
+    position: absolute;
+    bottom: -10px;
+    background: rgb(0, 0, 0);
+    
+}
+
+p{
+    color: #272262;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+a {
+    color: #7a3077;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover {
+    color: #272262;
+}
+
+/*  estilo msg erro ou sucesso  */
+#erro{
+    text-align:  center;
+    color: #000;
+    background: #f88080;
+    padding: 4px;
+    display: none;
+}
+
+#sucesso{
+    text-align:  center;
+    color: #000;
+    background: #affcb3;
+    padding: 4px;
+    display: none;    
+}
+#entrar{
+    margin-top: 1rem;
+    padding: .6rem 3rem;
+    border-radius: 1.5rem;
+}
+#entrar:active{
+    background: rgb(150, 150, 150) ;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastrar</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style-lg-cdt.css">
+    </head>
+    <body>
+        <main class="container">
+            <div class="card">
+                <h1>Cadastrar</h1>
+
+                <div id="erro"></div>
+                <div id="sucesso"></div>
+                
+                <div class="label-float">
+                    <input type="text" id="nome" placeholder="" required>
+                    <label id="labelNome" for="nome">Nome</label> 
+                </div>
+                
+                <div class="label-float">
+                    <input  type="text" id="usuario" placeholder="" required>
+                    <label id="labelUsuario" for="usuario">Usuário</label> 
+                </div>
+                
+                <div class="label-float">
+                    <input  type="password" id="senha" placeholder="" required>
+                    <label id="labelSenha" for="senha">Senha</label> 
+                </div>
+
+                <div class="label-float">
+                    <input  type="password" id="repitsenha" placeholder="" required>
+                    <label id="labelRepiSenha" for="repitsenha">Repetir senha</label> 
+                </div>
+                
+                <div id="btn" class="justify-center">
+                    <button onclick=" cadastrar () " >Cadastrar</button>
+                    
+                </div>
+                <a href="index.html"> Voltar</a>
+            </div>
+        </main>
+        <!-- Config link  -->
+        <script src="validação.js"></script>
+    </body>
+</html>

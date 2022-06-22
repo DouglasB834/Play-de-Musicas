@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,200;1,400&display=swap" rel="stylesheet">
+    <!-- Config CSS -->
+    <link rel="stylesheet" href="style.css">    <!-- Config JS --> 
+    <!-- Link Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js">
+    <title>projeto final parte 2 btn </title>
+</head>
+<body>
+        <!-- Iniciante Section play  -->
+    <main id="player">
+        
+         <!--start  Cards -->
+         <div class="card">  
+            <h4><i class="material-icons">equalizer</i>Player Turma Step</h4>
+
+            <div class="card-image">
+                <img src="" alt="imagem do album ">
+            </div>  
+                      
+            <div class="card-content">
+                <h5 class="tittle"></h5>                
+                <p class="artist"></p>
+            </div> <!-- End card-content -->
+
+        </div><!-- END Cards -->
+
+        <!-- audios e controles -->
+        <div>
+            <audio
+                controls src="files/Vitor Kley - Morena (Bruno Martini Remix).mp3">
+            </audio>
+        </div>
+        
+
+        <!-- Start controles -->
+        <div class="controles">
+            <i  id="back" class="fa fa-backward setas back"></i>  
+            <i class="fa fa-volume-off" id="btn-pause"></i>
+            <i class="fa fa-volume-up btn-play"></i>            
+            <i  id="next" class="fa fa-forward next "></i>
+        </div>  <!-- end  controles -->  
+
+        <div class="opcao">
+            <a href="/index.html">Desconectar</a>  
+            <p class="cadastrar">Cadastrar Musica</p>
+        </div>          
+    </main> 
+    <section class="container-form">
+
+        <form class="f-stilo" action="#" name="form-musicas" method="get" enctype="multipart/form-data" >
+            <div>
+                <input class="nomesF"  id="nomeArtista" type="text" placeholder="Nome do artista">
+                <label>Escolha uma foto </label>
+                <input id="btn-img" type="file" accept=".jpg, png, gif">
+            </div>
+            <div>
+                <input class="nomesF"  id="nomeMusica" type="text" placeholder="Nome da Músicas">             
+                <label>Escolha a Música </label>
+                <input id="btn-musica" type="file" accept=".mp3" required>
+            </div>
+            <div class="btn-enviar">
+                <button type="submit" id="enviar" 
+                value="enviar">Enviar</button>
+                <button id="voltar" >Voltar</button>
+
+            </div>
+                
+        </form>
+    </section>
+    
+    <!-- Config Java script  -->
+    <script defer src="index.js" type="module"></script> 
+    <script src="files/player.js"></script>
+</body>
+</html>
